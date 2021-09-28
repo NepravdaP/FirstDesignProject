@@ -93,4 +93,25 @@ header ul li {
     margin-left: 200px;
     margin-right: 20px;
 }
+.partner-container  {
+    background-color: #293942;
+    height: 180px;
+    display: flex;
+    margin-left: auto;
+    width: 100%;
+    
+    
+}
+.partner-container ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 200px;
+    align-items: center;
+    
 
+}
+.partner-container ul li {
+  
+}
