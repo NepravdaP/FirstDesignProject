@@ -112,6 +112,54 @@ header ul li {
     
 
 }
-.partner-container ul li {
-  
+.music-container {
+    display: flex;
+    align-items: center;
+    background-color: #1B262C;
+    height: 700px;
+    
+}
+.pic-music {
+    width: 1000px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 200px;
+}
+.music-container img {
+    height: 250px;
+    width: 250px;
+    padding: 30px;
+}
+.love-music {
+    padding-left: 100px;
+    padding-right: 200px;
+
+}
+.love-music h1 {
+    font-style: 48px;
+    color:  #F9F8FF;
+    max-width: 700px;
+    padding-bottom: 30px;
+    /* line-height: 65px; */
+}
+.love-music p {
+    font-style: 24px;
+    color: #F9F8FF ;
+    max-width: 400px;
+    padding-bottom: 35px;
+}
+.love-music a {
+    color: #7971E9;
+    font-style: 24px;
+    
+}
+.love-music img {
+    width: 14px;
+    height: 23px;
+    padding: 0;
+    margin-right: 8px;
+}
+.link-music {
+    display: flex;
+    align-items: center;
 }
