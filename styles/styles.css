@@ -4,8 +4,18 @@
     padding: 0;
 }
 body {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
     font-family: 'Khyay', sans-serif;
     text-decoration: none;
+
+   
+
+}
+section {
+
+    /* max-width: 1920px; */
 
 }
 button {
@@ -63,14 +73,14 @@ header ul li {
     /* background-color:  #1B262C; */
     background-image: url(../assets/app.png);
     background-size: 100%;
-    height: 840px;
+    height: 820px;
     
 
 }
 .discover-app {
 
     color: #F9F8FF;
-    max-width: 700px;
+    max-width: 900px;
     font-size: 48px;
     
     padding: 200px;
@@ -87,7 +97,8 @@ header ul li {
     border: 1px solid #7971E9;
     border-radius: 4px;
     margin-left: 200px;  
-    margin-bottom: 25px;   
+    margin-bottom: 25px;  
+    font-size: 24px; 
 }
 .goappstore-app {
     margin-left: 200px;
@@ -113,49 +124,52 @@ header ul li {
 
 }
 .music-container {
-    display: flex;
+    display: grid;
+    /* align-items: center;
+    justify-content: space-between; */
+    grid-template-columns:  repeat(2,1fr);
+
     align-items: center;
     background-color: #1B262C;
     height: 700px;
+    padding: 0 200px;
     
 }
 .pic-music {
     width: 1000px;
-
+   
     padding-top: 80px;
     padding-bottom: 80px;
-    padding-left: 200px;
+   
 }
 .music-container img {
-    height: 250px;
-    width: 250px;
-    padding: 30px;
+    
+    margin: 30px;
 }
 .love-music {
     
-    padding-left: 100px;
-    padding-right: 200px;
-
+   min-width: 35%;
+    justify-self: end;
 }
 .love-music h1 {
-    font-style: 48px;
+    font-size: 48px;
     color:  #F9F8FF;
     max-width: 700px;
     padding-bottom: 30px;
     /* line-height: 65px; */
 }
-.love-music p {
-    font-style: 24px;
-    color: #F9F8FF ;
+.p-love {
+    font-size: 24px;
+    color:rgba(249, 248, 255, 0.5) ;
     max-width: 400px;
     padding-bottom: 35px;
 }
 .love-music a {
     color: #7971E9;
-    font-style: 24px;
+    font-size: 24px;
     
 }
-.love-music img {
+.arrow-music {
     width: 14px;
     height: 23px;
     padding: 0;
@@ -166,42 +180,48 @@ header ul li {
     align-items: center;
 }
 .playlist-container {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     /* justify-content: space-around; */
     background-color: #1B262C;
     height: 650px;  
-    /* не работает тень вообще */
+    align-items: center;
     box-shadow: inset 0 30px 20px 0 rgba(26, 26, 26, 0.25) ; 
-    border: 1px solid transparent ;
+    border: 0px solid transparent ;
     padding: 0 200px;
 }
 .text-playlist {
-    padding-right: 220px;
+    /* padding-right: 220px; */
+    
+    justify-self: start;
+
 }
 .playing-playlist  {
     width: 300px;
     height: 500px;
     margin: 0 50px;
+    
     /* не работает тень картинки */
     box-shadow: 0px 10px 20px rgba(33, 33, 33, 0.59741);
-    border-radius: 10px;  
+    border-radius: 10px; 
+     
     
     
 }
-.playing-playlist:first-child {
-    padding-right: 100px;
+.img-playlist {
+    display: flex;
+    justify-self: end;
 }
 .playlist-container h1 {
-    font-style: 48px;
+    font-size: 48px;
     color:  #F9F8FF;
     max-width: 700px;
     padding-bottom: 30px;
 }
 .playlist-container p {
-    font-style: 24px;
-    color: #F9F8FF ;
-    max-width: 400px;
+    font-size: 24px;
+    color: rgba(249, 248, 255, 0.5);
+    max-width: 500px;
     padding-bottom: 35px;
 }
 .link-playlist {
@@ -210,7 +230,7 @@ header ul li {
 }
 .text-playlist a {
     color: #7971E9;
-    font-style: 24px;
+    font-size: 24px;
     
 }
 .text-playlist img {
@@ -219,4 +239,70 @@ header ul li {
     padding: 0;
     margin-right: 8px;
     border-radius: 4px;
+}
+.why-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    height: 610px;
+    background-color: #1B262C;
+    box-shadow: inset 0 30px 20px 0 rgba(26, 26, 26, 0.25) ; 
+    border: 1px solid transparent ;
+    color: rgba(249, 248, 255, 1);
+    padding: 55px 200px;
+}
+
+.why-container h1 {
+    align-self: flex-start;
+
+padding-bottom: 85px;
+font-size: 48px;
+height: 50px;
+width: 500px;
+font-family: inherit;
+}
+/* .why-container span {
+    width: 5px;
+    height: 48px;
+    background-color: #7971E9;
+    border-radius: 2.5px;
+    margin-right: 20px;
+
+} */
+.why-container h2 {
+    font-size: 32px;
+
+}
+.why-container p {
+    font-size: 24px;
+    color:rgba(249, 248, 255, 0.5);
+    max-width: 500px;
+
+
+}
+.text-why {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(2,1fr) ;
+    justify-content: space-around;
+    width: 100%;
+    height: 500px;
+    padding-top: 80px;
+}
+.text-why span {
+    width: 5px;
+    height: 48px;
+    background-color: #7971E9;
+    position: absolute;
+    border-radius: 2.5px;
+    top:-6px;
+    left: 0px;
+   
+    
+}
+.text-why div {
+    position: relative;
+    margin-right: 70px;
+    padding-left: 16px;
+
 }
