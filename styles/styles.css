@@ -306,3 +306,45 @@ font-family: inherit;
     padding-left: 16px;
 
 }
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #293942;
+    padding: 50px 200px;
+    
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 400px;
+}
+footer h2 {
+    color: rgba(249, 248, 255, 0.5);
+    font-size: 32px;
+    padding-bottom: 30px;
+}
+footer a {
+    color: #F9F8FF;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+/* .logo-footer a {
+padding: 50px 0;
+} */
+.logo-footer p {
+    font-size: 18px;
+    color: rgba(249, 248, 255, 0.25);
+    
+}
+.social-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #1B262C;
+    padding: 0 200px;
+}
+.social-container a {
+    padding: 40px 50px;
+}
+
