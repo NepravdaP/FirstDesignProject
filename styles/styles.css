@@ -13,12 +13,13 @@ body {
    
 
 }
-section {
+/* section {
 
-    /* max-width: 1920px; */
+     max-width: 1920px; 
 
-}
+} */
 button {
+    
     background: none;
     border: none;
 }
@@ -322,15 +323,18 @@ footer div{
 footer h2 {
     color: rgba(249, 248, 255, 0.5);
     font-size: 32px;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
 }
 footer a {
     color: #F9F8FF;
     font-size: 18px;
-    padding-bottom: 30px;
+    padding-bottom: 23px;
 }
 /* .logo-footer a {
 padding: 50px 0;
+} */
+/* .logo-footer {
+    flex-basis:  20%;
 } */
 .logo-footer p {
     font-size: 18px;
@@ -345,6 +349,6 @@ padding: 50px 0;
     padding: 0 200px;
 }
 .social-container a {
-    padding: 40px 50px;
+    padding: 35px 50px;
 }
 
